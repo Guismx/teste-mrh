@@ -1,6 +1,7 @@
 package br.com.testrmh.model;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -16,6 +17,9 @@ public class Documento {
     private String descricao;
     private String nomeArquivo;
     private String caminhoArquivo;
+
+    @CreationTimestamp
+    @Column(nullable = false, updatable = false)
     private LocalDateTime dataUpload;
 
     //Relacionamento com a entidade Comentarios
