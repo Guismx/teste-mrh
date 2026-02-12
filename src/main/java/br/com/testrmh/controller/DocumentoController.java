@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping ("api/documentos")
+@RequestMapping ("/api/documentos")
 public class DocumentoController {
 
     private final DocumentoService documentoService;
