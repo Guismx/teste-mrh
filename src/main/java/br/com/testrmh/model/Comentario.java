@@ -24,9 +24,10 @@ public class Comentario {
     public Comentario() {
     }
 
-    public Comentario(String comentario, LocalDateTime dataHoraComentario) {
+    public Comentario(String comentario, Documento documento) {
         this.comentario = comentario;
-        this.dataHoraComentario = dataHoraComentario;
+        this.documento = documento;
+        this.dataHoraComentario = LocalDateTime.now();
     }
 
     public Long getId() {
@@ -43,6 +44,14 @@ public class Comentario {
 
     public LocalDateTime getDataHoraComentario() {
         return dataHoraComentario;
+    }
+
+    public Documento getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(Documento documento) {
+        this.documento = documento;
     }
 
     @Override
