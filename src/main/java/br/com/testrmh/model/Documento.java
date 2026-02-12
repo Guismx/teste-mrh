@@ -74,6 +74,14 @@ public class Documento {
         return dataUpload;
     }
 
+    public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
+    }
+
     @Override
     public String toString() {
         return "Documento{" +
