@@ -9,32 +9,33 @@
   <body>
     <div class="form-container">
       <h1>Formulário de Envio de Documento</h1>
-      
       <form class="form" id="formUpload" enctype="multipart/form-data">
-        
         <div class="form-group">
           <label for="titulo">Título do documento</label>
           <input class="form-input" id="titulo" required type="text" />
         </div>
-        
         <div class="form-group">
           <label for="descricao">Descrição opcional</label>
           <input class="form-input" id="descricao" type="text" />
         </div>
-        
         <div class="form-group-file">
-           <label for="arquivo">Selecione o arquivo</label>
-           <input type="file" id="arquivo" name="file" class="input-arquivo" required />
+          <label for="arquivo">Selecione o arquivo</label>
+          <input
+            type="file"
+            id="arquivo"
+            name="file"
+            class="btn-padrao voltar input-arquivo"
+            required
+          />
         </div>
-
         <div class="btn-container">
-            <button class="btn-padrao submit" type="submit">Enviar Documento</button>
-            <a href="index.html" class="btn-padrao voltar">Voltar</a>
+          <button class="btn-padrao submit" type="submit">
+            Enviar Documento
+          </button>
+          <a href="index.html" class="btn-padrao">Voltar</a>
         </div>
-
       </form>
     </div>
-    
-    <script src="js/scripts.js"></script> 
+    <script src="js/scripts.js"></script>
   </body>
 </html>

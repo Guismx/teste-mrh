@@ -8,6 +8,7 @@
 
 body {
     background: linear-gradient(to right, #032E42, rgb(0, 0, 0), rgb(15, 15, 15), #032E42);
+    font-family: sans-serif;
 } 
 
 .info-bem-vindo {
