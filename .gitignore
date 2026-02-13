@@ -32,5 +32,5 @@ build/
 ### VS Code ###
 .vscode/
 
-
+uploads
 banco_teste.mv.db

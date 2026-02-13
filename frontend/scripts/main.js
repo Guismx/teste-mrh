@@ -1,5 +1,10 @@
+//Detecta se está rodando no seu PC ou na Internet
+const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+
 //URL principal para conectar com o Backend
-const API_URL = "http://localhost:9090/api";
+const API_URL = isLocal 
+    ? "http://localhost:9090/api" 
+    : "https://teste-mrh-backend.onrender.com/api";
 
 //Verifica qual elemento existe na tela para rodar a função certa 
 window.onload = function () {
