@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #032E42, rgb(0, 0, 0), rgb(15, 15, 15), #032E42);
+    font-family: sans-serif;
+} 
+
+.container-documentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container-documentos h1 {
+    color: #DAA520;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: rgb(24,24,24);
+    color: #DAA520;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px #DAA520;
+}
+
+th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #313131;
+    color: white;
+}
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #313131;
+}
+
+th {
+    background-color: #1A1A1A;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+.acao-btn:hover {
+    background-color: #313131;
+    color: #DAA520;
+    border: 1px solid #fff;
+}
+
+.acoes {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.btn-padrao {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #ffffff14;
+    color: #c7c5c5;
+    border: 1px solid #414141;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-padrao:hover {
+    background: #212121;
+    border-color: #DAA520;
+    color: #DAA520;
+}
+
+#btn-download {
+    color: #DAA520;
+}
+
+#btn-download:hover {
+    color: #ffffff;
+    border: 1px solid #DAA520;
+}
+
+#btn-download-doc {
+    margin-left: 10%;
+    margin-top: 10px;
+    color: #DAA520;
+    background: #212121;
+}
+
+#btn-download-doc:hover {
+    color: #ffffff;
+    border: 1px solid #DAA520;
+}
