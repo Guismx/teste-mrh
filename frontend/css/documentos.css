@@ -61,7 +61,7 @@ td:last-child {
 .acoes {
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: 10px;
 }
 
 .btn-padrao {
@@ -105,4 +105,19 @@ td:last-child {
 #btn-download-doc:hover {
     color: #ffffff;
     border: 1px solid #DAA520;
+}
+
+
+/*Força a tabela a respeitar larguras */
+table {
+    table-layout: fixed; 
+    width: 80%;
+}
+
+/* Regra para a coluna de Descrição*/
+td:nth-child(3) {
+    max-width: 300px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
